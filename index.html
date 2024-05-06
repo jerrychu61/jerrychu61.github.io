@@ -50,6 +50,21 @@
         #contact a:hover {
             text-decoration: underline;
         }
+
+        /* 新增样式 - 画廊 */
+        #gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        #gallery img {
+            width: calc(33% - 1rem); /* 适应三列布局，减去间隔 */
+            height: auto;
+            object-fit: cover; /* 保持图片宽高比并填充容器 */
+            border-radius: 8px; /* 给图片添加圆角 */
+        }
     </style>
 </head>
 <body>
@@ -60,7 +75,7 @@
 
 <div class="main">
     <section id="about">
-        <img src="12324.jpg" alt="朱俊杰的照片" class="profile-pic">
+        <img src="zhu-junjie.jpg" alt="朱俊杰的照片" class="profile-pic">
         <h2>关于我</h2>
         <p>大家好，我是朱俊杰，一个热爱技术、热衷于探索未知领域的开发者。在这里，我将分享我的学习历程、项目经验和生活点滴。</p>
     </section>
@@ -72,6 +87,16 @@
             <li>项目二：YYYY</li>
             <!-- 添加更多项目 -->
         </ul>
+    </section>
+
+    <!-- 图片展示区域（画廊） -->
+    <section id="gallery">
+        <h2>作品展示</h2>
+        <div class="gallery-images">
+            <img src="project1.jpg" alt="项目一截图">
+            <img src="project2.jpg" alt="项目二截图">
+            <!-- 更多图片... -->
+        </div>
     </section>
 
     <section id="contact">
