@@ -2,6 +2,7 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>朱俊杰的个人网页</title>
     <style>
         body {
@@ -9,6 +10,7 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         .header {
@@ -16,10 +18,6 @@
             color: white;
             text-align: center;
             padding: 1rem;
-        }
-
-        .header h1 {
-            margin: 0;
         }
 
         .main {
@@ -34,6 +32,14 @@
 
         h2 {
             margin-top: 0;
+        }
+
+        #about img.profile-pic {
+            width: 200px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 1rem;
         }
 
         #contact a {
@@ -54,6 +60,7 @@
 
 <div class="main">
     <section id="about">
+        <img src="zhu-junjie.jpg" alt="朱俊杰的照片" class="profile-pic">
         <h2>关于我</h2>
         <p>大家好，我是朱俊杰，一个热爱技术、热衷于探索未知领域的开发者。在这里，我将分享我的学习历程、项目经验和生活点滴。</p>
     </section>
